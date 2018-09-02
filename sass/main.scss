@@ -1,6 +1,7 @@
 @import 'vendor/normalize';
 
-@import 'base/reset';
+@import 'base/root',
+        'base/reset';
 
 @import 'layouts/container',
         'layouts/header',

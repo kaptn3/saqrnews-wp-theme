@@ -1,0 +1,18 @@
+.search-form {
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  display: flex;
+  padding: 4px;
+  box-shadow: var(--shadow);
+}
+
+.search-form__input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+}
+
+.search-form__submit {
+  color: var(--blue);
+  background: transparent;
+}
