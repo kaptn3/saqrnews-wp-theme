@@ -1,0 +1,15 @@
+@import 'vendor/normalize';
+
+@import 'base/root',
+        'base/reset';
+
+@import 'layouts/container',
+        'layouts/header',
+        'layouts/sidebar',
+        'layouts/footer';
+
+@import 'components/header-social',
+        'components/header-menu',
+        'components/search',
+        'components/footer-social',
+        'components/footer-menu';

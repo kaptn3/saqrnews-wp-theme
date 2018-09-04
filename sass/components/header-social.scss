@@ -1,0 +1,14 @@
+.header__social {
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+  width: 16%;
+}
+
+.header__social-link {
+  margin-right: 15px;
+}
+
+.header__social-link .fa-stack {
+  vertical-align: middle;
+}
