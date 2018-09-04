@@ -1,4 +1,8 @@
 .header {
   border-bottom: 1px solid var(--blue);
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--blue);
 }

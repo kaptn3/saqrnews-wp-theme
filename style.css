@@ -311,7 +311,7 @@ img {
 
 html {
   font-size: 16px;
-  font-family: sans-serif; }
+  font-family: "Noto Naskh Arabic",serif; }
 
 body {
   width: 100%;
@@ -327,7 +327,8 @@ button {
 
 a {
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 a:visited,
 a:active,
@@ -372,7 +373,53 @@ textarea:focus {
     max-width: 1140px; } }
 .header {
   border-bottom: 1px solid var(--blue);
-  padding: 20px; }
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--blue); }
+
+.header__social {
+  display: flex;
+  align-items: center;
+  width: 16%; }
+
+.header__social-link {
+  margin-right: 15px; }
+
+.header__social-link .fa-stack {
+  vertical-align: middle; }
+
+.header__menu {
+  width: 60%; }
+
+.header__menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem; }
+
+.header__menu-item {
+  width: 22%;
+  text-align: center; }
+
+.header__menu-home {
+  width: 12%; }
+
+.header__menu-item > a {
+  display: inline-block; }
+
+.header__menu-home > a {
+  display: block; }
+
+@media (max-width: 1200px) {
+  .header__menu-list {
+    font-size: 1.5rem; } }
+.header__search {
+  width: 16%; }
 
 .search-form {
   border: 1px solid var(--blue);
