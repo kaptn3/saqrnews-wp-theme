@@ -12,10 +12,10 @@
     <header class="header">
       <div class="header__search">
         <form role="search" method="get" action="<?php echo home_url( '/' ); ?>" class="search-form">
-          <input type="search" name="s" id="s" class="search-form__input">
           <button class="search-form__submit">
             <i class="fas fa-search"></i>
           </button>
+          <input type="search" name="s" id="s" class="search-form__input">
         </form>
       </div>
       
@@ -50,7 +50,103 @@
         </a>
       </nav>
     </header>
-  </div>
+
+    <div class="wrapper">
+      <div class="posts-last">
+        <div class="posts-last__card">
+          Card
+        </div>
+        <div class="posts-last__card">
+          Card
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <h2 class="sidebar__header">Header</h2>
+      <div class="sidebar__posts">
+        <div class="sidebar__posts-card">
+          <div class="sidebar__posts-tumb"></div>
+          <div class="sidebar__posts-text">
+            <h3 class="sidebar__posts-title"><a href="#">Header of post</a></h3>
+            <span class="sidebar__posts-date">24.05.2018</span>
+          </div>
+        </div>
+        <div class="sidebar__posts-card">
+          <div class="sidebar__posts-tumb"></div>
+          <div class="sidebar__posts-text">
+            <h3 class="sidebar__posts-title"><a href="#">Header of post</a></h3>
+            <span class="sidebar__posts-date">24.05.2018</span>
+          </div>
+        </div>
+        <div class="sidebar__posts-more">
+          <a class="sidebar__posts-more-link" href="#">more</a>
+        </div>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <div class="footer__social">
+        <nav class="container">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" data-name="snapchat" href="#">
+                <span class="footer__social-icon">
+                  <i class="fab fa-snapchat"></i>
+                </span>
+                <span class="footer__social-name">snapchat</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" data-name="telegram" href="#">
+                <span class="footer__social-icon">
+                  <i class="fab fa-telegram-plane"></i>
+                </span>
+                <span class="footer__social-name">telegram</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" data-name="twitter" href="#">
+                <span class="footer__social-icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <span class="footer__social-name">twitter</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" data-name="instagram" href="#">
+                <span class="footer__social-icon">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span class="footer__social-name">instagram</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" data-name="facebook" href="#">
+                <span class="footer__social-icon">
+                  <i class="fab fa-facebook-f"></i>
+                </span>
+                <span class="footer__social-name">facebook</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a href="">1</a></li>
+            <li class="footer__menu-item"><a href="">1</a></li>
+            <li class="footer__menu-item"><a href="">1</a></li>
+            <li class="footer__menu-item"><a href="">1</a></li>
+          </ul>
+          <span class="footer__copyright">&copy; SaqrNews 2018</span>
+        </nav>
+      </div>
+    </footer>
+
+  </div><!-- end app -->
+
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="js/main.js"></script>
