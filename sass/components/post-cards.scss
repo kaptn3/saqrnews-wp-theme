@@ -1,0 +1,49 @@
+.posts {
+  display: grid;
+  grid-template-areas:
+                      "post1 post2"
+                      "post3 post4";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 180px 180px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+.posts__card {
+  border: 1px solid var(--blue);
+  position: relative;
+  color: var(--blue);
+}
+
+.posts__card-category {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid var(--blue);
+  border-left: 1px solid var(--blue);
+  padding: 0 8px;
+  line-height: 1.4;
+}
+
+.posts__card-title-n-date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 12px 18px;
+}
+
+.posts__card-title {
+  font-size: 2em;
+}
+
+.posts__card-date {
+  color: #888;
+  font-size: .8em;
+}
+
+.posts__card-comments {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px 18px;
+}
