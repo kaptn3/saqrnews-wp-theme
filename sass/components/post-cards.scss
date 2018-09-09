@@ -4,15 +4,16 @@
                       "post1 post2"
                       "post3 post4";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 180px 180px;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+  grid-template-rows: 200px 200px;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
 }
 
 .posts__card {
   border: 1px solid var(--blue);
   position: relative;
   color: var(--blue);
+  box-shadow: var(--card-shadow);
 }
 
 .posts__card-category {
