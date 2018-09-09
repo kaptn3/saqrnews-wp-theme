@@ -1,0 +1,50 @@
+.sidebar__header {
+  line-height: 2rem;
+  background: var(--blue);
+  color: #fff;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.sidebar__posts-card {
+  display: flex;
+  padding: 10px 0;
+}
+
+.sidebar__posts-tumb {
+  border: 1px solid #aaa;
+  height: 75px;
+  width: 30%;
+}
+
+.sidebar__posts-tumb > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar__posts-text {
+  width: 70%;
+  padding-right: 15px;
+}
+
+.sidebar__posts-title {
+  color: var(--blue);
+  font-size: 1rem;
+}
+
+.sidebar__posts-date {
+  color: #aaa;
+  font-size: .875rem;
+}
+
+.sidebar__posts-more {
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar__posts-more-link {
+  background: var(--blue);
+  font-size: .875rem;
+  padding: 0 15px;
+}
