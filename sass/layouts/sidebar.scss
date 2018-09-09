@@ -48,3 +48,25 @@
   font-size: .875rem;
   padding: 0 15px;
 }
+
+.sidebar__top-posts {
+  padding-top: 35px;
+}
+
+.sidebar__header-top-posts {
+  margin-bottom: 20px;
+}
+
+.sidebar__top-posts-item {
+  color: var(--blue);
+  padding-bottom: 6px;
+}
+
+.sidebar__top-posts-item > h3 {
+  padding: 10px 0;
+}
+
+.sidebar__top-posts-card.posts__card {
+  height: 160px;
+  box-shadow: none;
+}
