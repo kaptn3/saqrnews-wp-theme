@@ -577,7 +577,8 @@ textarea:focus {
   display: flex;
   justify-content: space-between;
   color: var(--blue);
-  padding-top: 1.2em; }
+  padding-top: 1.5em;
+  padding-bottom: .3em; }
 
 .footer__menu-list {
   list-style: none;
