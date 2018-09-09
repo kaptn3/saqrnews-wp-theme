@@ -1,9 +1,11 @@
 @import 'vendor/normalize';
 
 @import 'base/root',
+        'base/rtl',
         'base/reset';
 
 @import 'layouts/container',
+        'layouts/grid',
         'layouts/header',
         'layouts/sidebar',
         'layouts/footer';
@@ -11,5 +13,7 @@
 @import 'components/header-social',
         'components/header-menu',
         'components/search',
+        'components/post-cards',
+        'components/category-posts',
         'components/footer-social',
         'components/footer-menu';

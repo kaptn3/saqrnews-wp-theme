@@ -1,0 +1,45 @@
+.app {
+  display: grid;
+  grid-template-areas: 
+                      "header header"
+                      "sidebar wrapper"
+                      "footer footer";
+  grid-template-columns: 30% 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+@media all and (max-width: 575px) {
+  .app { 
+    grid-template-areas: 
+      "header"
+      "wrapper"
+      "sidebar"
+      "footer"; 
+    grid-template-columns: 1fr;
+ }
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.wrapper {
+  grid-area: wrapper;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.header,
+.sidebar,
+.wrapper,
+.footer {
+  padding: 1.2em;
+  //border: 2px solid;
+}

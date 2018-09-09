@@ -1,0 +1,18 @@
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  color: var(--blue);
+  padding-top: 1.5em;
+  padding-bottom: .3em;
+}
+
+.footer__menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer__menu-item {
+  padding-left: 15px;
+}
