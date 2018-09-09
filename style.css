@@ -401,8 +401,7 @@ textarea:focus {
 .sidebar,
 .wrapper,
 .footer {
-  padding: 1.2em;
-  border: 2px solid; }
+  padding: 1.2em; }
 
 .header {
   border-bottom: 1px solid var(--blue);
