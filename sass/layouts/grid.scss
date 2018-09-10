@@ -9,7 +9,7 @@
   grid-column-gap: 10px;
 }
 
-@media all and (max-width: 575px) {
+@media all and (max-width: 768px) {
   .app { 
     grid-template-areas: 
       "header"

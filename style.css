@@ -382,7 +382,7 @@ textarea:focus {
   grid-row-gap: 10px;
   grid-column-gap: 10px; }
 
-@media all and (max-width: 575px) {
+@media all and (max-width: 768px) {
   .app {
     grid-template-areas: "header" "wrapper" "sidebar" "footer";
     grid-template-columns: 1fr; } }
@@ -474,7 +474,8 @@ textarea:focus {
 .footer {
   background: #ebebeb;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  font-size: 1.125rem; }
 
 .header__social {
   display: flex;
@@ -592,6 +593,11 @@ textarea:focus {
   left: 0;
   padding: 12px 18px; }
 
+@media (max-width: 576px) {
+  .posts {
+    grid-template-areas: "post1" "post2" "post3" "post4";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px 200px; } }
 .category-posts {
   display: grid;
   grid-template-areas: "post5 post5 post6 post6" "post7 post8 post9 post10" "post11 post11 post12 post13" "post11 post11 post14 post15";
@@ -648,6 +654,16 @@ textarea:focus {
 .category-posts > .posts__card:nth-child(11) {
   grid-area: post15; }
 
+@media (max-width: 768px) {
+  .category-posts {
+    grid-template-areas: "post5 post5" "post6 post11" "post7 post8" "post9 post10" "post12 post13" "post14 post15";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px; } }
+@media (max-width: 576px) {
+  .category-posts {
+    grid-template-areas: "post5" "post6" "post11" "post7" "post8" "post9" "post10" "post12" "post13" "post14" "post15";
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px; } }
 .footer__social {
   border-bottom: 2px solid #c4c4c4;
   padding-bottom: 1.2em; }
@@ -704,6 +720,15 @@ textarea:focus {
   .footer__social-link[data-name="instagram"] .footer__social-icon {
     background: #466d8d; }
 
+@media (max-width: 768px) {
+  .footer__social-name {
+    display: none; }
+
+  .footer__social-link {
+    justify-content: center; }
+
+  .footer__social-icon {
+    margin: 0; } }
 .footer__menu {
   display: flex;
   justify-content: space-between;
@@ -719,5 +744,12 @@ textarea:focus {
 
 .footer__menu-item {
   padding-left: 15px; }
+
+@media (max-width: 480px) {
+  .footer__menu {
+    flex-direction: column; }
+
+  .footer__menu-list {
+    padding-bottom: 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */
