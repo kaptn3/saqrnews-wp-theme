@@ -16,3 +16,13 @@
 .footer__menu-item {
   padding-left: 15px;
 }
+
+@media (max-width: 480px) {
+  .footer__menu {
+    flex-direction: column;
+  }
+
+  .footer__menu-list {
+    padding-bottom: 1.5em;
+  }
+}
