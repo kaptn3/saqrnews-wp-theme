@@ -57,6 +57,6 @@
                       "post3"
                       "post4";
       grid-template-columns: 1fr;
-      grid-template-rows: 200px 200px 200px 200px;
+      grid-template-rows: repeat(4, 200px);
   }
 }

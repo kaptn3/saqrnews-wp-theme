@@ -82,7 +82,7 @@
                       "post12 post13"
                       "post14 post15";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: repeat(6, 150px);
   }
 }
 
@@ -101,6 +101,6 @@
                       "post14"
                       "post15";
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: repeat(11, 150px);
   }
 }

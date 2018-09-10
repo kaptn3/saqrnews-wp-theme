@@ -619,7 +619,7 @@ textarea:focus {
   .posts {
     grid-template-areas: "post1" "post2" "post3" "post4";
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 200px 200px; } }
+    grid-template-rows: repeat(4, 200px); } }
 .category-posts {
   display: grid;
   grid-template-areas: "post5 post5 post6 post6" "post7 post8 post9 post10" "post11 post11 post12 post13" "post11 post11 post14 post15";
@@ -680,12 +680,12 @@ textarea:focus {
   .category-posts {
     grid-template-areas: "post5 post5" "post6 post11" "post7 post8" "post9 post10" "post12 post13" "post14 post15";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 150px 150px 150px 150px 150px; } }
+    grid-template-rows: repeat(6, 150px); } }
 @media (max-width: 576px) {
   .category-posts {
     grid-template-areas: "post5" "post6" "post11" "post7" "post8" "post9" "post10" "post12" "post13" "post14" "post15";
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px; } }
+    grid-template-rows: repeat(11, 150px); } }
 .footer__social {
   border-bottom: 2px solid #c4c4c4;
   padding-bottom: 1.2em; }
