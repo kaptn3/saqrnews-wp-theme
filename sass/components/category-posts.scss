@@ -71,3 +71,36 @@
 .category-posts > .posts__card:nth-child(11) {
   grid-area: post15;
 }
+
+@media (max-width: 768px) {
+  .category-posts {
+    grid-template-areas:
+                      "post5 post5"
+                      "post6 post11"
+                      "post7 post8"
+                      "post9 post10"
+                      "post12 post13"
+                      "post14 post15";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-posts {
+    grid-template-areas:
+                      "post5"
+                      "post6"
+                      "post11"
+                      "post7"
+                      "post8"
+                      "post9"
+                      "post10"
+                      "post12"
+                      "post13"
+                      "post14"
+                      "post15";
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+  }
+}

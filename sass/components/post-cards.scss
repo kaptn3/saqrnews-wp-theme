@@ -48,3 +48,15 @@
   left: 0;
   padding: 12px 18px;
 }
+
+@media (max-width: 576px) {
+  .posts {
+      grid-template-areas:
+                      "post1"
+                      "post2"
+                      "post3"
+                      "post4";
+      grid-template-columns: 1fr;
+      grid-template-rows: 200px 200px 200px 200px;
+  }
+}
