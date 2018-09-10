@@ -26,3 +26,9 @@
     width: 22%;
   }
 }
+
+@media (max-width: 576px) {
+  .header__search {
+    width: 50%;
+  }
+}

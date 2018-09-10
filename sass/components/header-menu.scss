@@ -29,6 +29,16 @@
   display: block;
 }
 
+.header__btn-mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header__menu-list {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .header__menu-home {
     display: none;
@@ -43,8 +53,15 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .header__menu-list {
-    font-size: 1.5rem;
+@media (max-width: 576px) {
+  .header__btn-mobile {
+    display: block;
+    font-size: 2rem;
+    line-height: 0;
+    color: var(--blue);
+  }
+
+  .header__menu {
+    display: none;
   }
 }

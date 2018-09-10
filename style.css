@@ -352,6 +352,10 @@ h5,
 h6 {
   margin: 0; }
 
+button {
+  background: transparent;
+  cursor: pointer; }
+
 input:focus,
 button:focus,
 textarea:focus {
@@ -412,6 +416,9 @@ textarea:focus {
   justify-content: space-between;
   color: var(--blue); }
 
+@media (max-width: 576px) {
+  .header {
+    padding: 10px 15px; } }
 .sidebar__header {
   line-height: 2rem;
   background: var(--blue);
@@ -517,6 +524,12 @@ textarea:focus {
 .header__menu-home > a {
   display: block; }
 
+.header__btn-mobile {
+  display: none; }
+
+@media (max-width: 1200px) {
+  .header__menu-list {
+    font-size: 1.5rem; } }
 @media (max-width: 768px) {
   .header__menu-home {
     display: none; }
@@ -526,9 +539,15 @@ textarea:focus {
 
   .header__menu-item {
     width: auto; } }
-@media (max-width: 1200px) {
-  .header__menu-list {
-    font-size: 1.5rem; } }
+@media (max-width: 576px) {
+  .header__btn-mobile {
+    display: block;
+    font-size: 2rem;
+    line-height: 0;
+    color: var(--blue); }
+
+  .header__menu {
+    display: none; } }
 .header__search {
   width: 16%; }
 
@@ -551,6 +570,9 @@ textarea:focus {
 @media (max-width: 768px) {
   .header__search {
     width: 22%; } }
+@media (max-width: 576px) {
+  .header__search {
+    width: 50%; } }
 .posts {
   display: grid;
   grid-template-areas: "post1 post2" "post3 post4";
