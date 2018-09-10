@@ -55,6 +55,11 @@ h6 {
   margin: 0;
 }
 
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
 input:focus,
 button:focus,
 textarea:focus {
