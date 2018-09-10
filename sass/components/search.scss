@@ -20,3 +20,9 @@
   color: var(--blue);
   background: transparent;
 }
+
+@media (max-width: 768px) {
+  .header__search {
+    width: 22%;
+  }
+}

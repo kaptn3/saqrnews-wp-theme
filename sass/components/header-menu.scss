@@ -29,6 +29,20 @@
   display: block;
 }
 
+@media (max-width: 768px) {
+  .header__menu-home {
+    display: none;
+  }
+
+  .header__menu {
+    width: 70%;
+  }
+
+  .header__menu-item {
+    width: auto;
+  }
+}
+
 @media (max-width: 1200px) {
   .header__menu-list {
     font-size: 1.5rem;

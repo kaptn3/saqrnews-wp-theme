@@ -12,3 +12,9 @@
 .header__social-link .fa-stack {
   vertical-align: middle;
 }
+
+@media (max-width: 768px) {
+  .header__social {
+    display: none;
+  }
+}
