@@ -64,4 +64,34 @@
   .header__menu {
     display: none;
   }
+
+  .header__menu_mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    z-index: 99;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 12px 2px rgba(0,0,0,.12);
+  }
+
+  .header__menu-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header__menu-item,
+  .header__menu-item a {
+    width: 100%;
+  }
+
+  .header__menu-item {
+    text-align: right;
+  }
+
+  .header__menu-item a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+  }
 }
