@@ -15,6 +15,12 @@
 
 .footer__menu-item {
   padding-left: 15px;
+  transition: .2s color;
+}
+
+.footer__menu-item:hover,
+.footer__menu-item:focus {
+  color: var(--blue-dark);
 }
 
 @media (max-width: 480px) {

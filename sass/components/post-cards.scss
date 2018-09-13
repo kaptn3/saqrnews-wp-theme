@@ -14,6 +14,24 @@
   position: relative;
   color: var(--blue);
   box-shadow: var(--card-shadow);
+  display: block;
+  background-image: url('img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: none;
+  transition: .5s box-shadow cubic-bezier(0.18, 0.89, 0.32, 1.28)
+}
+
+.posts__card:hover,
+.posts__card:focus {
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.33) inset;
+}
+
+.posts__card-link {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .posts__card-category {
@@ -24,29 +42,42 @@
   border-left: 1px solid var(--blue);
   padding: 0 8px;
   line-height: 1.4;
+  background: #fff;
+  color: var(--blue);
+  transition: .2s background, color;
 }
 
-.posts__card-title-n-date {
+.posts__card-category:focus,
+.posts__card-category:hover {
+  color: #fff;
+  background: var(--blue);
+}
+
+.posts__card-content {
   position: absolute;
   bottom: 0;
-  right: 0;
+  width: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #fff;
   padding: 12px 18px;
 }
 
 .posts__card-title {
-  font-size: 2em;
+  transition: .2s color;
+}
+
+.posts__card-title:hover,
+.posts__card-title:focus {
+  color: var(--blue-light);
 }
 
 .posts__card-date {
-  color: #888;
+  color: #eee;
   font-size: .8em;
-}
-
-.posts__card-comments {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 12px 18px;
 }
 
 @media (max-width: 576px) {

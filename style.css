@@ -299,6 +299,9 @@ template {
 
 :root {
   --blue: #5780a8;
+  --blue-light: #97C6F4;
+  --blue-dark: #26415B;
+  --tenne: #DB885C;
   --shadow: 0 .005em .01em 0 rgba(0,0,0,.12),0 2px 10px 0 rgba(0,0,0,.12);
   --card-shadow: 5px 4px 3px 1px rgba(0,0,0,.12); }
 
@@ -446,7 +449,12 @@ textarea:focus {
 
 .sidebar__posts-title {
   color: var(--blue);
-  font-size: 1rem; }
+  font-size: 1rem;
+  transition: .2s color; }
+
+.sidebar__posts-title:hover,
+.sidebar__posts-title:focus {
+  color: var(--tenne); }
 
 .sidebar__posts-date {
   color: #aaa;
@@ -459,7 +467,12 @@ textarea:focus {
 .sidebar__posts-more-link {
   background: var(--blue);
   font-size: .875rem;
-  padding: 0 15px; }
+  padding: 0 15px;
+  transition: .2s background; }
+
+.sidebar__posts-more-link:hover,
+.sidebar__posts-more-link:focus {
+  background: var(--tenne); }
 
 .sidebar__top-posts {
   padding-top: 35px; }
@@ -491,7 +504,12 @@ textarea:focus {
   width: 16%; }
 
 .header__social-link {
-  margin-right: 15px; }
+  margin-right: 15px;
+  transition: .2s color; }
+
+.header__social-link:hover,
+.header__social-link:focus {
+  color: var(--tenne); }
 
 .header__social-link .fa-stack {
   vertical-align: middle; }
@@ -513,7 +531,12 @@ textarea:focus {
 
 .header__menu-item {
   width: 22%;
-  text-align: center; }
+  text-align: center;
+  transition: .2s color; }
+
+.header__menu-item:hover,
+.header__menu-item:focus {
+  color: var(--tenne); }
 
 .header__menu-home {
   width: 12%; }
@@ -590,7 +613,12 @@ textarea:focus {
 
 .search-form__submit {
   color: var(--blue);
-  background: transparent; }
+  background: transparent;
+  cursor: pointer; }
+
+.search-form__submit:hover,
+.search-form__submit:focus {
+  color: var(--blue-dark); }
 
 @media (max-width: 768px) {
   .header__search {
@@ -610,7 +638,23 @@ textarea:focus {
   border: 1px solid var(--blue);
   position: relative;
   color: var(--blue);
-  box-shadow: var(--card-shadow); }
+  box-shadow: var(--card-shadow);
+  display: block;
+  background-image: url("img/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: none;
+  transition: 0.5s box-shadow cubic-bezier(0.18, 0.89, 0.32, 1.28); }
+
+.posts__card:hover,
+.posts__card:focus {
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.33) inset; }
+
+.posts__card-link {
+  width: 100%;
+  height: 100%;
+  display: block; }
 
 .posts__card-category {
   position: absolute;
@@ -619,26 +663,38 @@ textarea:focus {
   border-bottom: 1px solid var(--blue);
   border-left: 1px solid var(--blue);
   padding: 0 8px;
-  line-height: 1.4; }
+  line-height: 1.4;
+  background: #fff;
+  color: var(--blue);
+  transition: .2s background, color; }
 
-.posts__card-title-n-date {
+.posts__card-category:focus,
+.posts__card-category:hover {
+  color: #fff;
+  background: var(--blue); }
+
+.posts__card-content {
   position: absolute;
   bottom: 0;
-  right: 0;
+  width: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #fff;
   padding: 12px 18px; }
 
 .posts__card-title {
-  font-size: 2em; }
+  transition: .2s color; }
+
+.posts__card-title:hover,
+.posts__card-title:focus {
+  color: var(--blue-light); }
 
 .posts__card-date {
-  color: #888;
+  color: #eee;
   font-size: .8em; }
-
-.posts__card-comments {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 12px 18px; }
 
 @media (max-width: 576px) {
   .posts {
@@ -739,7 +795,13 @@ textarea:focus {
 .footer__social-link {
   display: flex;
   align-items: center;
-  padding: 8px; }
+  padding: 8px;
+  opacity: .8;
+  transition: .2s opacity; }
+
+.footer__social-link:focus,
+.footer__social-link:hover {
+  opacity: 1; }
 
 .footer__social-link[data-name="facebook"] {
   background: #4a639f; }
@@ -790,7 +852,12 @@ textarea:focus {
   display: flex; }
 
 .footer__menu-item {
-  padding-left: 15px; }
+  padding-left: 15px;
+  transition: .2s color; }
+
+.footer__menu-item:hover,
+.footer__menu-item:focus {
+  color: var(--blue-dark); }
 
 @media (max-width: 480px) {
   .footer__menu {

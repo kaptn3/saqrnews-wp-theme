@@ -6,7 +6,13 @@
 }
 
 .header__social-link {
-  margin-right: 15px;
+  margin-right: 15px; 
+  transition: .2s color;
+}
+
+.header__social-link:hover,
+.header__social-link:focus {
+  color: var(--tenne);
 }
 
 .header__social-link .fa-stack {

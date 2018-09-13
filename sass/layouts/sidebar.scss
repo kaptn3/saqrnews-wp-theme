@@ -31,6 +31,12 @@
 .sidebar__posts-title {
   color: var(--blue);
   font-size: 1rem;
+  transition: .2s color;
+}
+
+.sidebar__posts-title:hover,
+.sidebar__posts-title:focus {
+  color: var(--tenne);
 }
 
 .sidebar__posts-date {
@@ -47,6 +53,12 @@
   background: var(--blue);
   font-size: .875rem;
   padding: 0 15px;
+  transition: .2s background;
+}
+
+.sidebar__posts-more-link:hover,
+.sidebar__posts-more-link:focus {
+  background: var(--tenne);
 }
 
 .sidebar__top-posts {

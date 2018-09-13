@@ -19,6 +19,12 @@
 .search-form__submit {
   color: var(--blue);
   background: transparent;
+  cursor: pointer;
+}
+
+.search-form__submit:hover,
+.search-form__submit:focus {
+  color: var(--blue-dark);
 }
 
 @media (max-width: 768px) {

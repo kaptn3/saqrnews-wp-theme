@@ -15,6 +15,12 @@
 .header__menu-item {
   width: 22%;
   text-align: center;
+  transition: .2s color;
+}
+
+.header__menu-item:hover,
+.header__menu-item:focus {
+  color: var(--tenne);
 }
 
 .header__menu-home {
