@@ -11,3 +11,7 @@ var menu = new Vue({
     }
   }
 });
+
+var wrapper = new Vue({
+  el: '.wrapper'
+});
