@@ -60,7 +60,7 @@
           </span>
           <div class="posts__card-content">
             <div class="posts__card-title-n-date">
-              <h3>Title of post {{ n }}</h3>
+              <h3 class="posts__card-title"><a href="#post">Title of post {{ n }}</a></h3>
               <span class="posts__card-date">09.09.2018</span>
             </div>
             <div class="posts__card-comments">
@@ -83,7 +83,7 @@
             </span>
             <div class="posts__card-content">
               <div class="posts__card-title-n-date">
-                <h3>Title of post {{ n }}</h3>
+                <h3 class="posts__card-title"><a href="#post">Title of post {{ n }}</a></h3>
                 <span class="posts__card-date">09.09.2018</span>
               </div>
               <div v-if="(n === 1) || (n === 2) || (n === 7)" class="posts__card-comments">
@@ -101,7 +101,7 @@
       <div class="sidebar__posts">
         <div class="sidebar__posts-card">
           <div class="sidebar__posts-tumb">
-            <img src="img/image.jpg">
+            <img src="img/logo.png">
           </div>
           <div class="sidebar__posts-text">
             <h3 class="sidebar__posts-title"><a href="#">Header of post</a></h3>
@@ -110,7 +110,7 @@
         </div>
         <div class="sidebar__posts-card">
           <div class="sidebar__posts-tumb">
-            <img src="img/image.jpg">
+            <img src="img/logo.png">
           </div>
           <div class="sidebar__posts-text">
             <h3 class="sidebar__posts-title"><a href="#">Header of post</a></h3>
@@ -149,44 +149,14 @@
       <div class="footer__social">
         <nav class="container">
           <ul class="footer__social-list">
-            <li class="footer__social-item">
-              <a class="footer__social-link" data-name="snapchat" href="#">
+            <li
+              v-for="item in socials"
+              class="footer__social-item">
+              <a class="footer__social-link" :data-name="item.name" :href="item.link">
                 <span class="footer__social-icon">
-                  <i class="fab fa-snapchat"></i>
+                  <i :class="'fab ' + item.icon"></i>
                 </span>
-                <span class="footer__social-name">snapchat</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" data-name="telegram" href="#">
-                <span class="footer__social-icon">
-                  <i class="fab fa-telegram-plane"></i>
-                </span>
-                <span class="footer__social-name">telegram</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" data-name="twitter" href="#">
-                <span class="footer__social-icon">
-                  <i class="fab fa-twitter"></i>
-                </span>
-                <span class="footer__social-name">twitter</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" data-name="instagram" href="#">
-                <span class="footer__social-icon">
-                  <i class="fab fa-instagram"></i>
-                </span>
-                <span class="footer__social-name">instagram</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" data-name="facebook" href="#">
-                <span class="footer__social-icon">
-                  <i class="fab fa-facebook-f"></i>
-                </span>
-                <span class="footer__social-name">facebook</span>
+                <span class="footer__social-name">{{ item.name }}</span>
               </a>
             </li>
           </ul>
