@@ -662,15 +662,20 @@ textarea:focus {
 
 .posts__card-category {
   position: absolute;
-  top: 0;
   right: 0;
-  border-bottom: 1px solid var(--blue);
-  border-left: 1px solid var(--blue);
-  padding: 0 8px;
-  line-height: 1.4;
+  top: 0;
   background: #fff;
   color: var(--blue);
-  transition: .2s background, color; }
+  transition: .2s background, color;
+  line-height: 1.4;
+  height: 1.4em;
+  overflow: hidden; }
+
+.posts__card-category > a {
+  display: block;
+  border-bottom: 1px solid var(--blue);
+  border-left: 1px solid var(--blue);
+  padding: 0 8px; }
 
 .posts__card-category:focus,
 .posts__card-category:hover {
@@ -699,6 +704,9 @@ textarea:focus {
 .posts__card-date {
   color: #eee;
   font-size: .8em; }
+
+.posts__card-comments {
+  flex-shrink: 0; }
 
 @media (max-width: 576px) {
   .posts {
