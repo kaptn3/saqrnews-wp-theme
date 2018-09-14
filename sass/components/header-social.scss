@@ -15,7 +15,12 @@
   color: var(--tenne);
 }
 
-.header__social-link .fa-stack {
+.header__social-link .fa-circle {
+  height: 1em;
+  width: 1em;
+}
+
+.header__social-link .fa-circle .fa-stack {
   vertical-align: middle;
 }
 
