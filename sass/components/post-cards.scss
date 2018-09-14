@@ -44,12 +44,12 @@
   line-height: 1.4;
   height: 1.4em;
   overflow: hidden;
+  border-bottom: 1px solid var(--blue);
+  border-left: 1px solid var(--blue);
 }
 
 .posts__card-category > a {
   display: block;  
-  border-bottom: 1px solid var(--blue);
-  border-left: 1px solid var(--blue);
   padding: 0 8px;
 }
 
