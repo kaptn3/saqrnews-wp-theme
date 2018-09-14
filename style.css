@@ -851,12 +851,12 @@ textarea:focus {
   padding: 0;
   display: flex; }
 
-.footer__menu-item {
+.footer__menu-list > li {
   padding-left: 15px;
   transition: .2s color; }
 
-.footer__menu-item:hover,
-.footer__menu-item:focus {
+.footer__menu-list > li:hover,
+.footer__menu-list > li:focus {
   color: var(--blue-dark); }
 
 @media (max-width: 480px) {
