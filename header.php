@@ -10,7 +10,26 @@
 <body <?php body_class(); ?>>
   <div class="app">
     <header class="header">
-      <?php get_search_form(); ?>
+      <nav class="header__social">
+        <a class="header__social-link" href="#facebook">
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a class="header__social-link" href="#instagram">
+            <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a class="header__social-link" href="#twitter">
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a class="header__social-link" href="#whatsapp">
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+      </nav>
 
       <button @click="showMenu" class="header__btn-mobile"><i class="fas fa-bars"></i></button>
       
@@ -38,24 +57,5 @@
         </ul>
       </nav>
 
-      <nav class="header__social">
-        <a class="header__social-link" href="#facebook">
-          <span class="fa-stack fa-sm">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-        <a class="header__social-link" href="#instagram">
-            <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a class="header__social-link" href="#twitter">
-          <span class="fa-stack fa-sm">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-        <a class="header__social-link" href="#whatsapp">
-            <i class="fab fa-whatsapp fa-2x"></i>
-        </a>
-      </nav>
+      <?php get_search_form(); ?>
     </header>

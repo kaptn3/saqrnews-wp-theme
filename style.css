@@ -384,8 +384,8 @@ textarea:focus {
     max-width: 1140px; } }
 .app {
   display: grid;
-  grid-template-areas: "header header" "sidebar wrapper" "footer footer";
-  grid-template-columns: 30% 1fr;
+  grid-template-areas: "header header" "wrapper sidebar" "footer footer";
+  grid-template-columns: 1fr 30%;
   grid-row-gap: 10px;
   grid-column-gap: 10px; }
 
@@ -422,7 +422,7 @@ textarea:focus {
 @media (max-width: 576px) {
   .header {
     padding: 10px 15px; } }
-.sidebar__header {
+.widget-title {
   line-height: 2rem;
   background: var(--blue);
   color: #fff;
