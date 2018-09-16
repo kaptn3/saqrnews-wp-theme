@@ -1,3 +1,6 @@
+/*
+Theme Name: SaqrNews Theme
+*/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -422,7 +425,7 @@ textarea:focus {
 @media (max-width: 576px) {
   .header {
     padding: 10px 15px; } }
-.widget-title {
+.sidebar__widget-title {
   line-height: 2rem;
   background: var(--blue);
   color: #fff;
