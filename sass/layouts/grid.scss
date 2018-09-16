@@ -5,8 +5,10 @@
                       "wrapper sidebar"
                       "footer footer";
   grid-template-columns: 1fr 30%;
+  grid-template-rows: auto 1fr auto;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
+  min-height: 100vh;
 }
 
 @media all and (max-width: 768px) {
