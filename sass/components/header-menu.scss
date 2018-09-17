@@ -144,4 +144,16 @@
     padding: 12px 20px;
     border-bottom: 1px solid #eee;
   }
+
+  .sub-menu {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    background: #eeeeee2e;
+  }
+
+  .sub-menu > li > a {
+      border-bottom: 1px solid #eee;
+      padding: 12px 35px 12px 20px;
+  }
 }
