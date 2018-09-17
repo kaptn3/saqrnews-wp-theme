@@ -1,0 +1,41 @@
+.list-post {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.list-post__image-and-category {
+    position: relative;
+}
+
+.list-post__image {
+    display: block;
+    height: 200px;
+}
+
+.list-post__category {
+    border: 1px solid var(--blue);
+}
+
+.list-post__title {
+    margin-bottom: 8px;
+    color: var(--blue-dark);
+}
+
+.list-post__title:hover,
+.list-post__title:focus {
+    color: var(--blue);
+}
+
+.list-post__date {
+    color: var(--blue-light);
+}
+
+.list-post__excerpt {
+    line-height: 1.5em;
+    padding: 8px 0;
+    overflow: hidden;
+    max-height: 7.5em;
+}
+
