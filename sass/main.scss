@@ -10,7 +10,6 @@
         'layouts/grid',
         'layouts/header',
         'layouts/sidebar',
-        'layouts/wrapper',
         'layouts/footer';
 
 @import 'components/header-social',
@@ -18,5 +17,6 @@
         'components/search',
         'components/post-cards',
         'components/category-posts',
+        'components/article',
         'components/footer-social',
         'components/footer-menu';
