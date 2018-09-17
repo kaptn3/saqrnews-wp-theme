@@ -422,7 +422,8 @@ textarea:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--blue); }
+  color: var(--blue);
+  position: relative; }
 
 @media (max-width: 576px) {
   .header {
@@ -592,14 +593,17 @@ textarea:focus {
   .header__menu-list {
     font-size: 1.5rem; } }
 @media (max-width: 768px) {
+  .header__menu {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 15px 0; }
+
   .header__menu-home {
     display: none; }
 
-  .header__menu {
-    width: 70%; }
-
   .header__menu-list > li {
-    width: auto; } }
+    width: auto;
+    padding: 0 15px; } }
 @media (max-width: 576px) {
   .header__btn-mobile {
     display: block;
@@ -614,7 +618,7 @@ textarea:focus {
     display: block;
     position: absolute;
     left: 0;
-    top: 55px;
+    top: 100%;
     z-index: 99;
     width: 100%;
     background: #fff;
