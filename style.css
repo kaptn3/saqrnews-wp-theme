@@ -757,7 +757,7 @@ textarea:focus {
 .list-post {
   display: grid;
   grid-template-columns: 40% 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px 20px;
   padding-bottom: 20px; }
 
 .list-post__image-and-category {
@@ -787,6 +787,9 @@ textarea:focus {
   overflow: hidden;
   max-height: 7.5em; }
 
+@media (max-width: 768px) {
+  .list-post {
+    grid-template-columns: 1fr; } }
 .category-posts {
   display: grid;
   grid-template-areas: "post5 post5 post6 post6" "post7 post8 post9 post10" "post11 post11 post12 post13" "post11 post11 post14 post15";

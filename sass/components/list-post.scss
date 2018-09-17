@@ -1,7 +1,7 @@
 .list-post {
     display: grid;
     grid-template-columns: 40% 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px 20px;
     padding-bottom: 20px;
 }
 
@@ -37,5 +37,11 @@
     padding: 8px 0;
     overflow: hidden;
     max-height: 7.5em;
+}
+
+@media (max-width: 768px) {
+    .list-post {
+        grid-template-columns: 1fr;
+    }
 }
 
