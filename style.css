@@ -441,7 +441,8 @@ textarea:focus {
 .sidebar__posts-tumb {
   border: 1px solid #aaa;
   height: 75px;
-  width: 30%; }
+  width: 30%;
+  display: block; }
 
 .sidebar__posts-tumb > img {
   object-fit: cover;
