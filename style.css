@@ -496,9 +496,6 @@ textarea:focus {
   height: 160px;
   box-shadow: none; }
 
-.page-title {
-  font-size: 2rem; }
-
 .footer {
   background: #ebebeb;
   padding-left: 0;
@@ -818,6 +815,22 @@ textarea:focus {
     grid-template-areas: "post5" "post6" "post11" "post7" "post8" "post9" "post10" "post12" "post13" "post14" "post15";
     grid-template-columns: 1fr;
     grid-template-rows: repeat(11, 150px); } }
+.article__title {
+  font-size: 2rem;
+  margin-bottom: 15px; }
+
+.article__image {
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 15px; }
+  .article__image img {
+    object-fit: cover;
+    height: 100%; }
+
+.article__content {
+  line-height: 1.5;
+  color: #222; }
+
 .footer__social {
   border-bottom: 2px solid #c4c4c4;
   padding-bottom: 1.2em; }
