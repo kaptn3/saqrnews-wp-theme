@@ -3,7 +3,7 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href=favicon.png>
+  <link rel="shortcut icon" href="<?php echo get_bloginfo( 'template_directory' ); ?>/favicon.png">
 
   <?php wp_head(); ?>
 </head>
