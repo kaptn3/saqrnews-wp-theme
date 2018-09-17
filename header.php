@@ -42,7 +42,7 @@
             'items_wrap'      => '<ul class="header__menu-list header__menu-list_right">%3$s</ul>'
           ) ); 
           ?>
-          <a href="#" class="header__menu-home"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo.png"></a>
+          <a href="<?php echo home_url(); ?>" class="header__menu-home"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo.png"></a>
           <?php
           wp_nav_menu( array(
             'menu'            => 'left', 
