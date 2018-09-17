@@ -34,27 +34,23 @@
       <button @click="showMenu" class="header__btn-mobile"><i class="fas fa-bars"></i></button>
       
       <nav :class="{ header__menu_mobile : isShowMenu }" class="header__menu">
-        <ul class="header__menu-list">
           <?php
           wp_nav_menu( array(
             'menu'            => 'right', 
             'container'       => false, 
             'menu_class'      => 'footer__menu-list',
-            'items_wrap'      => '%3$s',
-            'depth'           => 1
+            'items_wrap'      => '<ul class="header__menu-list header__menu-list_right">%3$s</ul>'
           ) ); 
           ?>
-          <li class="header__menu-home"><a href="#"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo.png"></a></li>
+          <a href="#" class="header__menu-home"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo.png"></a>
           <?php
           wp_nav_menu( array(
             'menu'            => 'left', 
             'container'       => false, 
             'menu_class'      => 'footer__menu-list',
-            'items_wrap'      => '%3$s',
-            'depth'           => 1
+            'items_wrap'      => '<ul class="header__menu-list header__menu-list_left">%3$s</ul>'
           ) ); 
           ?>
-        </ul>
       </nav>
 
       <?php get_search_form(); ?>

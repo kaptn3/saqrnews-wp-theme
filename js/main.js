@@ -30,3 +30,16 @@ var social = new Vue({
     };
   }
 });
+
+function iconDownSubmenu() {
+  const hasChild = document.querySelectorAll('.menu-item-has-children > a');
+  for (let i = 0; i < hasChild.length; i++) { 
+    let iconSortDown = document.createElement('i');
+    hasChild[i].appendChild(iconSortDown);
+    iconSortDown.classList.add('fas', 'fa-sort-down');
+  }
+}
+
+window.onload = function() {
+  iconDownSubmenu();
+}

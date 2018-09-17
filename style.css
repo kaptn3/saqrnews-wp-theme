@@ -389,8 +389,10 @@ textarea:focus {
   display: grid;
   grid-template-areas: "header header" "wrapper sidebar" "footer footer";
   grid-template-columns: 1fr 30%;
+  grid-template-rows: auto 1fr auto;
   grid-row-gap: 10px;
-  grid-column-gap: 10px; }
+  grid-column-gap: 10px;
+  min-height: 100vh; }
 
 @media all and (max-width: 768px) {
   .app {
@@ -416,7 +418,7 @@ textarea:focus {
 
 .header {
   border-bottom: 1px solid var(--blue);
-  padding: 20px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -494,6 +496,9 @@ textarea:focus {
   height: 160px;
   box-shadow: none; }
 
+.page-title {
+  font-size: 2rem; }
+
 .footer {
   background: #ebebeb;
   padding-left: 0;
@@ -521,7 +526,9 @@ textarea:focus {
   .header__social {
     display: none; } }
 .header__menu {
-  width: 60%; }
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 140px 1fr; }
 
 .header__menu-list {
   list-style: none;
@@ -529,29 +536,59 @@ textarea:focus {
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   font-size: 2rem; }
 
+.header__menu-list_right {
+  justify-content: flex-end; }
+
 .header__menu-list > li {
-  width: 22%;
-  text-align: center;
+  padding: 0 25px; }
+
+.header__menu-list > li > a {
   transition: .2s color; }
 
-.header__menu-list > li:hover,
-.header__menu-list > li:focus {
+.header__menu-list > li > a:hover,
+.header__menu-list > li > a:focus {
   color: var(--tenne); }
-
-.header__menu-home {
-  width: 12%; }
 
 .header__menu-list > li > a {
   display: inline-block; }
 
-.header__menu-home > a {
+.header__menu-home {
   display: block; }
+  .header__menu-home img {
+    vertical-align: super; }
 
 .header__btn-mobile {
   display: none; }
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 99;
+  background: #fff;
+  box-shadow: var(--shadow); }
+
+.sub-menu > li {
+  margin-left: 0; }
+  .sub-menu > li a {
+    width: 100%;
+    padding: 10px 15px;
+    display: block; }
+
+.sub-menu > li > a:hover {
+  background: #ededed; }
+
+.menu-item-has-children {
+  position: relative; }
+
+.menu-item-has-children:hover .sub-menu,
+.menu-item-has-children:focus .sub-menu {
+  display: block; }
 
 @media (max-width: 1200px) {
   .header__menu-list {
