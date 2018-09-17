@@ -132,7 +132,8 @@
 
   .header__menu-list > li,
   .header__menu-list > li > a {
-    width: 100%;
+    min-width: 100%;
+    white-space: nowrap;
   }
 
   .header__menu-list > li {
