@@ -42,6 +42,8 @@ function saqrnews_widgets_init() {
 add_action( 'widgets_init', 'saqrnews_widgets_init' );
 
 function saqrnews_scripts() {
+  wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Changa:400,600,700&amp;subset=arabic' );
+
   wp_enqueue_style( 'saqrnews-style', get_stylesheet_uri() );
 
   wp_enqueue_script( 'vue', 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js', '20151215', true );
@@ -55,4 +57,5 @@ function saqrnews_scripts() {
   }
 }
 add_action( 'wp_enqueue_scripts', 'saqrnews_scripts' );
+
 ?>
