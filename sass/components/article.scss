@@ -7,9 +7,20 @@
     height: 300px;
     overflow: hidden;
     margin-bottom: 15px;
+    position: relative;
     img {
         object-fit: cover;
         height: 100%;
+    }
+    .article__image-alt {
+        padding: 10px 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: #fff;
+        background: #222;
+        width: 100%;
+        text-align: left;
     }
 }
 
