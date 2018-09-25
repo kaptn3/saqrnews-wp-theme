@@ -23,7 +23,7 @@
   if (get_cat_name($category_id)) {
   ?>
     <section class="category-block">
-      <header class="category-posts__title">
+      <header class="posts-list-title">
         <h2><?php echo get_cat_name($category_id); ?></h2>
       </header>
       <div class="category-posts">
@@ -47,6 +47,19 @@
         }
         wp_reset_postdata(); ?>
       </div>
+    </section>
+
+    <section class="last-news">
+        <header class="posts-list-title">
+          <h2>Last News</h2>
+        </header>
+        <?php
+        if ( have_posts() ) : 
+          while ( have_posts() ) : the_post();
+            get_template_part('templates/post-list-card');
+          endwhile;
+        endif;
+        ?>
     </section>
   <?php
   }

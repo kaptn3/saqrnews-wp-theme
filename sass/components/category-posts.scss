@@ -11,23 +11,6 @@
   grid-column-gap: 15px;
 }
 
-.category-posts__title {
-  margin: 1.2em 0;
-  background: #ebebeb;
-  color: #fff;
-  text-align: center;
-  border: 1px solid #c0c0c0;
-}
-
-.category-posts__title > h2 {
-  background: var(--blue);
-  display: inline-block;
-  font-size: 1.125rem;
-  padding: 4px 18px;
-  border-left: 1px solid #9e9e9e;
-  border-right: 1px solid #9e9e9e;
-}
-
 .category-posts > .posts__card:nth-child(1) {
   grid-area: post5;
 }
