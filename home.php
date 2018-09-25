@@ -54,11 +54,16 @@
           <h2>Last News</h2>
         </header>
         <?php
-        if ( have_posts() ) : 
+        if ( have_posts() ) : ?>
+          <div id="ajax">
+          <?php 
           while ( have_posts() ) : the_post();
             get_template_part('templates/post-list-card');
-          endwhile;
+          endwhile; ?>
+        </div>
+        <?php
         endif;
+        load_more_button();
         ?>
     </section>
   <?php
