@@ -4,6 +4,7 @@
     echo '<div class="sidebar__top-posts-card posts__card" style="background-image: url('. $url.')">';
     ?>    
         <span class="posts__card-category"><?php the_category(' '); ?></span>
-    </div>
+        <a href="<?php the_permalink() ?>" class="posts__card-link"></a>
+    </div>    
     <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 </div>
