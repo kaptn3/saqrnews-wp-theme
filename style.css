@@ -978,7 +978,7 @@ textarea:focus {
   display: flex; }
 
 .footer__menu-list > li {
-  padding-left: 15px;
+  padding-left: 20px;
   transition: .2s color; }
 
 .footer__menu-list > li:hover,
