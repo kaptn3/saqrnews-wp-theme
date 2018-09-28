@@ -31,6 +31,12 @@
         </a>
       </nav>
 
+      <div class="header__menu-home">
+        <a href="<?php echo home_url(); ?>" >Saqr News</a>
+      </div>
+
+      <?php get_search_form(); ?>
+      
       <button @click="showMenu" class="header__btn-mobile"><i class="fas fa-bars"></i></button>
       
       <nav :class="{ header__menu_mobile : isShowMenu }" class="header__menu">
@@ -42,16 +48,13 @@
             'items_wrap'      => '<ul class="header__menu-list header__menu-list_right">%3$s</ul>'
           ) ); 
           ?>
-          <a href="<?php echo home_url(); ?>" class="header__menu-home"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo.png"></a>
           <?php
-          wp_nav_menu( array(
+          /*wp_nav_menu( array(
             'menu'            => 'left', 
             'container'       => false, 
             'menu_class'      => 'footer__menu-list',
             'items_wrap'      => '<ul class="header__menu-list header__menu-list_left">%3$s</ul>'
-          ) ); 
+          ) ); */
           ?>
       </nav>
-
-      <?php get_search_form(); ?>
     </header>

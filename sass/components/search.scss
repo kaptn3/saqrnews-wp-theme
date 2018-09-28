@@ -1,13 +1,14 @@
 .header__search {
-  width: 16%;
+  //width: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
 }
 
 .search-form {
-  border: 1px solid var(--blue);
-  border-radius: 4px;
-  display: flex;
+  border-bottom: 1px solid var(--blue);
   padding: 4px;
-  box-shadow: var(--shadow);
 }
 
 .search-form__input {
@@ -25,16 +26,4 @@
 .search-form__submit:hover,
 .search-form__submit:focus {
   color: var(--blue-dark);
-}
-
-@media (max-width: 768px) {
-  .header__search {
-    width: 22%;
-  }
-}
-
-@media (max-width: 576px) {
-  .header__search {
-    width: 50%;
-  }
 }
