@@ -12,7 +12,7 @@
             <?php the_time(get_option('date_format')) ?> <i class="fas fa-calendar"></i>
         </span>
         <div class="list-post__excerpt">
-            <?php the_content(''); ?>
+            <?php the_excerpt(); ?>
         </div>
     </div>
 </article>
