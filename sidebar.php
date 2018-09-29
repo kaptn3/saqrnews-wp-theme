@@ -5,7 +5,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside id="secondary" class="sidebar">
-  <h2 class="sidebar__widget-title">Last News</h2>
+  <h2 class="sidebar__widget-title">آخر الأخبار</h2>
       <div class="sidebar__posts">
         <?php 
         $args = array(
@@ -23,7 +23,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
       </div>
 
       <div class="sidebar__top-posts">
-        <h2 class="sidebar__widget-title sidebar__header-top-posts">Top posts</h2>
+        <h2 class="sidebar__widget-title sidebar__header-top-posts">أعلى المشاركات</h2>
         <?php 
         $args = array(
           'posts_per_page' => 2
