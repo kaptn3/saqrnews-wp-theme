@@ -7,6 +7,8 @@
 
   <?php wp_head(); ?>
 </head>
+<?php get_template_part('templates/google'); ?>
+
 <body <?php body_class(); ?>>
   <div class="app">
     <header class="header">
