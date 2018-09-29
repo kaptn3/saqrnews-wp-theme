@@ -74,9 +74,10 @@
 
 .posts__card-title {
   transition: .2s color;
-  line-height: 1;
+  line-height: 1.5;
   max-height: 3em;
   overflow: hidden;
+  font-weight: normal;
 }
 
 .posts__card-title:hover,
