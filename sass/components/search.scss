@@ -21,9 +21,20 @@
   color: var(--blue);
   background: transparent;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .search-form__submit:hover,
 .search-form__submit:focus {
   color: var(--blue-dark);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }

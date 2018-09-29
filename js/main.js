@@ -2,18 +2,18 @@ var menu = new Vue({
   el: '.header',
   data() {
     return {
-      isShowMenu: false
+      isShowMenu: false,
+      isShowSearch: false
     };
   },
   methods: {
     showMenu() {
       this.isShowMenu = !this.isShowMenu;
+    },
+    showSearchForm() {
+      this.isShowSearch = !this.isShowSearch;
     }
   }
-});
-
-var wrapper = new Vue({
-  el: '.wrapper'
 });
 
 var social = new Vue({
@@ -38,7 +38,7 @@ function iconDownSubmenu() {
     hasChild[i].appendChild(iconSortDown);
     iconSortDown.classList.add('fas', 'fa-sort-down');
   }
-}
+};
 
 window.onload = function() {
   iconDownSubmenu();

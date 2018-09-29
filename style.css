@@ -681,6 +681,14 @@ textarea:focus {
 .search-form__submit:focus {
   color: var(--blue-dark); }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s ease-out; }
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0; }
+
 .posts {
   display: grid;
   grid-template-areas: "post1 post2" "post3 post4";
