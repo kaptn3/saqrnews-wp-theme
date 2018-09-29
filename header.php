@@ -11,7 +11,8 @@
 
 <body <?php body_class(); ?>>
   <div class="app">
-    <header class="header">
+    <header class="header"
+        :class="{ header_mobile : isShowSearch }">
       <nav class="header__social">
         <a class="header__social-link" href="#facebook">
           <span class="fa-stack fa-sm">
@@ -33,7 +34,8 @@
         </a>
       </nav>
 
-      <div class="header__menu-home">
+      <div
+        class="header__logo">
         <a href="<?php echo home_url(); ?>" >Saqr News</a>
       </div>
 

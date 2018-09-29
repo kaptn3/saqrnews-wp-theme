@@ -1,5 +1,16 @@
-.header__menu-home {
+.header__logo {
   display: block;
   font-size: 40px;
   padding: 15px 0;
+  opacity: 1;
+  transition: .2s opacity;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .header__logo {
+    text-align: right;
+    font-size: 34px;
+    padding-right: 20px;
+  }
 }

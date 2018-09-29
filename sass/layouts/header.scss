@@ -27,10 +27,29 @@
   grid-area: menu;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .header {
-    padding: 10px 15px;
     grid-template-areas:
-                        "button logo search"
+                        "logo search"
+                        "menu menu";
+    grid-template-columns: 1fr auto;
+  }
+}
+
+@media (max-width: 578px) {
+  .header {
+    grid-template-areas:
+                        "logo search button";
+    grid-template-columns: 1fr auto auto;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
+  .header {
+    height: 78px;
+  }
+
+  .header_mobile {
+    grid-template-columns: 0 auto auto;
   }
 }
