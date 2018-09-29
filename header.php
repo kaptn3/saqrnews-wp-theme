@@ -48,10 +48,10 @@
       <nav :class="{ header__menu_mobile : isShowMenu }" class="header__menu">
           <?php
           wp_nav_menu( array(
-            'menu'            => 'right', 
+            'menu'            => 'header', 
             'container'       => false, 
-            'menu_class'      => 'footer__menu-list',
-            'items_wrap'      => '<ul class="header__menu-list header__menu-list_right">%3$s</ul>'
+            'menu_class'      => 'header__menu-list',
+            'items_wrap'      => '<ul class="header__menu-list">%3$s</ul>'
           ) ); 
           ?>
           <?php
