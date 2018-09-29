@@ -21,10 +21,10 @@ var social = new Vue({
   data() {
     return {
       socials: [
-        { name: 'snapchat', icon: 'fa-snapchat', link: '#' },
-        { name: 'telegram', icon: 'fa-telegram-plane', link: '#' },
+        //{ name: 'snapchat', icon: 'fa-snapchat', link: '#' },
+        //{ name: 'telegram', icon: 'fa-telegram-plane', link: '#' },
         { name: 'twitter', icon: 'fa-twitter', link: '#' },
-        { name: 'instagram', icon: 'fa-instagram', link: '#' },
+        //{ name: 'instagram', icon: 'fa-instagram', link: '#' },
         { name: 'facebook', icon: 'fa-facebook-f', link: '#' }
       ] 
     };
