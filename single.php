@@ -17,7 +17,10 @@
             <div class="article__content">
                 <?php the_content(); ?>
             </div>
-        <?php
+            <?php
+            if ( comments_open() || get_comments_number() ) :
+                comments_template();
+            endif;
         endwhile;
     else :
         echo "<h2 class='article__title'>Nothing Found</h2>";
