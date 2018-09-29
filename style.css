@@ -424,7 +424,7 @@ textarea:focus {
   grid-template-columns: repeat(3, 1fr);
   color: var(--blue);
   position: relative;
-  text-align: center; }
+  height: 165px; }
 
 .header__social {
   grid-area: social; }
@@ -441,8 +441,9 @@ textarea:focus {
 @media (max-width: 600px) {
   .header {
     grid-template-areas: "logo search" "menu menu";
-    grid-template-columns: 1fr auto; } }
-@media (max-width: 578px) {
+    grid-template-columns: 1fr auto;
+    height: 145px; } }
+@media (max-width: 576px) {
   .header {
     grid-template-areas: "logo search button";
     grid-template-columns: 1fr auto auto;
@@ -549,18 +550,24 @@ textarea:focus {
   .header__social {
     display: none; } }
 .header__logo {
-  display: block;
-  font-size: 40px;
   padding: 15px 0;
-  opacity: 1;
-  transition: .2s opacity;
   overflow: hidden; }
+  .header__logo a {
+    display: block;
+    height: 100%; }
+
+.header__logo-img {
+  max-height: 100%;
+  object-fit: contain; }
 
 @media (max-width: 600px) {
   .header__logo {
-    text-align: right;
-    font-size: 34px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+    .header__logo a {
+      width: 170px; } }
+@media (max-width: 576px) {
+  .header__logo {
+    padding-right: 0; } }
 .header__menu {
   width: 100%;
   border-top: 1px solid;

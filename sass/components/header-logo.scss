@@ -1,16 +1,28 @@
 .header__logo {
-  display: block;
-  font-size: 40px;
   padding: 15px 0;
-  opacity: 1;
-  transition: .2s opacity;
   overflow: hidden;
+  a {
+    display: block;
+    height: 100%;
+  }
+}
+
+.header__logo-img {
+  max-height: 100%;
+  object-fit: contain;
 }
 
 @media (max-width: 600px) {
   .header__logo {
-    text-align: right;
-    font-size: 34px;
     padding-right: 20px;
+    a {
+      width: 170px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header__logo {
+    padding-right: 0;
   }
 }

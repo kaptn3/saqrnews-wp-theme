@@ -36,7 +36,9 @@
 
       <div
         class="header__logo">
-        <a href="<?php echo home_url(); ?>" >Saqr News</a>
+        <a href="<?php echo home_url(); ?>" >
+          <img class="header__logo-img" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo.svg">
+        </a>
       </div>
 
       <?php get_search_form(); ?>

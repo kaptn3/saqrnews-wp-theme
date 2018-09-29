@@ -8,7 +8,7 @@
   grid-template-columns: repeat(3, 1fr);
   color: var(--blue);
   position: relative;
-  text-align: center;
+  height: 165px;
 }
 
 .header__social {
@@ -33,10 +33,11 @@
                         "logo search"
                         "menu menu";
     grid-template-columns: 1fr auto;
+    height: 145px;
   }
 }
 
-@media (max-width: 578px) {
+@media (max-width: 576px) {
   .header {
     grid-template-areas:
                         "logo search button";
