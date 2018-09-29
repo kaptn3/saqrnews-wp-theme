@@ -49,7 +49,7 @@
 
     <section class="last-news">
         <header class="posts-list-title">
-          <h2>Last News</h2>
+          <h2>آخر الأخبار</h2>
         </header>
         <?php
         if ( have_posts() ) : ?>
