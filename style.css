@@ -843,6 +843,9 @@ textarea:focus {
 @media (max-width: 768px) {
   .list-post {
     grid-template-columns: 1fr; } }
+.elm-button {
+  padding: 10px 20px; }
+
 .posts-list-title {
   margin: 1.2em 0;
   background: #ebebeb;
