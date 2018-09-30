@@ -41,6 +41,11 @@ a:focus {
   color: inherit;
 }
 
+.article__content a,
+.list-post__excerpt a {
+  color: var(--tenne);
+}
+
 p {
   line-height: 1.5;
   margin: 0 0 1rem;

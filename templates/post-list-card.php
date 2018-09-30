@@ -2,7 +2,7 @@
     <div class="list-post__image-and-category">
         <?php 
         $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-        echo '<a class="posts__card list-post__image" style="background-image: url('. $url.')"></a>';
+        echo '<a href="' . get_permalink() . '" class="posts__card list-post__image" style="background-image: url('. $url.')"></a>';
         ?>
         <span class="posts__card-category list-post__category"><?php the_category(' '); ?></span>
     </div>
@@ -13,6 +13,7 @@
         </span>
         <div class="list-post__excerpt">
             <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>">اقرأ أكثر</a>
         </div>
     </div>
 </article>
