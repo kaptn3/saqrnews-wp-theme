@@ -939,6 +939,9 @@ textarea:focus {
   line-height: 1.5;
   color: #222; }
 
+p iframe {
+  max-width: 100%; }
+
 .footer__social {
   border-bottom: 2px solid #c4c4c4;
   padding-bottom: 1.2em; }
