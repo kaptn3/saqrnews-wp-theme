@@ -1,14 +1,13 @@
 .header__search {
-  //width: 16%;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .search-form {
   border-bottom: 1px solid var(--blue);
   padding: 4px;
+  width: 100%;
 }
 
 .search-form__input {

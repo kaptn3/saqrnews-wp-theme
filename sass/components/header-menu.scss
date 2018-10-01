@@ -1,7 +1,5 @@
 .header__menu {
   width: 100%;
-  border-top: 1px solid;
-  padding: 20px;
 }
 
 .header__menu-list {
@@ -9,13 +7,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-}
-
-.header__menu-list_right {
-  //justify-content: flex-end;
+  font-size: 1.5rem;
 }
 
 .header__menu-list > li {

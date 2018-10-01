@@ -3,12 +3,12 @@
   padding: 0;
   display: grid;
   grid-template-areas:
-                      "social logo search"
-                      "menu menu menu";
-  grid-template-columns: repeat(3, 1fr);
+                      "logo menu search";
+  grid-template-columns: 270px auto 1fr;
+  align-items: center;
   color: var(--blue);
   position: relative;
-  height: 165px;
+  height: 100px;
 }
 
 .header__social {
