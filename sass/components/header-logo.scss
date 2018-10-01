@@ -12,17 +12,9 @@
   object-fit: contain;
 }
 
-/*@media (max-width: 600px) {
-  .header__logo {
-    padding-right: 20px;
-    a {
-      width: 170px;
-    }
+@media (max-width: 768px) {
+  .header__logo-img {
+    width: auto;
+    max-height: 50px;
   }
 }
-
-@media (max-width: 576px) {
-  .header__logo {
-    padding-right: 0;
-  }
-}*/
