@@ -43,7 +43,7 @@ add_action( 'widgets_init', 'saqrnews_widgets_init' );
 function saqrnews_scripts() {
   wp_enqueue_style('fonts', 'https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');
 
-  wp_enqueue_style( 'saqrnews-style', get_stylesheet_uri() );
+  wp_enqueue_style( 'saqrnews-style', get_stylesheet_uri(), false, time());
 
   wp_enqueue_script( 'vue', 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js', '20151215', true );
 
