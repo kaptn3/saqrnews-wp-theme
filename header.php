@@ -25,18 +25,20 @@
       
       <button @click="showMenu" class="header__btn-mobile"><i class="fas fa-bars"></i></button>
       
-      
-      <nav
-        v-if="!isShowSearch"
-        :class="{ header__menu_mobile : isShowMenu }" class="header__menu"
-        @click.self="showMenu">
-          <?php
-          wp_nav_menu( array(
-            'menu'            => 'header', 
-            'container'       => false, 
-            'menu_class'      => 'header__menu-list',
-            'items_wrap'      => '<ul class="header__menu-list">%3$s</ul>'
-          ) ); 
-          ?>
-      </nav>
+      <transition name="fade">
+        <nav
+          v-if="!isShowSearch"
+          :class="{ header__menu_mobile : isShowMenu }"
+          class="header__menu"
+          @click.self="showMenu">
+            <?php
+            wp_nav_menu( array(
+              'menu'            => 'header', 
+              'container'       => false, 
+              'menu_class'      => 'header__menu-list',
+              'items_wrap'      => '<ul class="header__menu-list" :class="{ header__menu_list_mobile : isShowMenu }">%3$s</ul>'
+            ) );
+            ?>
+        </nav>
+      </transition>
     </header>
