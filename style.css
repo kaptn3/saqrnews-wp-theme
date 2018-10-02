@@ -625,8 +625,8 @@ textarea:focus {
   .header__menu-list {
     font-size: 1.5rem; } }
 @media (max-width: 768px) {
-  .header__menu-list > li {
-    width: auto;
+  .header__menu-list li a {
+    width: 100%;
     border-bottom: 1px solid #ebebeb; }
 
   .header__menu-list > li > a {
@@ -654,7 +654,8 @@ textarea:focus {
   .header__menu-list {
     flex-direction: column;
     background: #f3f3f3;
-    width: 50%;
+    min-width: 252px;
+    max-width: 50%;
     height: 100%;
     overflow-y: auto;
     transform: translateX(100%);
