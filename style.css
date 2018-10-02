@@ -646,10 +646,12 @@ textarea:focus {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 99; }
+    z-index: 99;
+    margin: -100%; }
 
   .header__menu_mobile {
-    background: #00000080; }
+    background: #00000080;
+    margin: 0; }
 
   .header__menu-list {
     flex-direction: column;
