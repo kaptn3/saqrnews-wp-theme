@@ -27,30 +27,15 @@
   grid-area: menu;
 }
 
-@media (max-width: 600px) {
-  .header {
-    grid-template-areas:
-                        "logo search"
-                        "menu menu";
-    grid-template-columns: 1fr auto;
-    height: 145px;
-  }
-}
-
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .header {
     grid-template-areas:
                         "logo search button";
-    grid-template-columns: 1fr auto auto;
-    padding-left: 20px;
-    padding-right: 15px;
-  }
-
-  .header {
+    grid-template-columns: auto 1fr auto;
     height: 78px;
   }
 
   .header_mobile {
-    grid-template-columns: 0 auto auto;
+    grid-template-columns: 0 1fr auto;
   }
 }

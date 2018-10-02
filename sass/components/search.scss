@@ -37,3 +37,10 @@
 .fade-leave-to {
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  .header__search {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+}

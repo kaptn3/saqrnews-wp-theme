@@ -25,10 +25,11 @@
       
       <button @click="showMenu" class="header__btn-mobile"><i class="fas fa-bars"></i></button>
       
-      <transition name="fade">
+      
       <nav
         v-if="!isShowSearch"
-        :class="{ header__menu_mobile : isShowMenu }" class="header__menu">
+        :class="{ header__menu_mobile : isShowMenu }" class="header__menu"
+        @click.self="showMenu">
           <?php
           wp_nav_menu( array(
             'menu'            => 'header', 
@@ -37,14 +38,5 @@
             'items_wrap'      => '<ul class="header__menu-list">%3$s</ul>'
           ) ); 
           ?>
-          <?php
-          /*wp_nav_menu( array(
-            'menu'            => 'left', 
-            'container'       => false, 
-            'menu_class'      => 'footer__menu-list',
-            'items_wrap'      => '<ul class="header__menu-list header__menu-list_left">%3$s</ul>'
-          ) ); */
-          ?>
       </nav>
-          </transition>
     </header>
