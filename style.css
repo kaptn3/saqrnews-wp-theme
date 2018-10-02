@@ -445,7 +445,7 @@ textarea:focus {
 .header__menu {
   grid-area: menu; }
 
-@media (max-width: 768px) {
+@media (max-width: 916px) {
   .header {
     grid-template-areas: "logo search button";
     grid-template-columns: auto 1fr auto;
@@ -561,7 +561,7 @@ textarea:focus {
   max-height: 65px;
   object-fit: contain; }
 
-@media (max-width: 768px) {
+@media (max-width: 916px) {
   .header__logo-img {
     width: auto;
     max-height: 50px; } }
@@ -624,7 +624,7 @@ textarea:focus {
 @media (max-width: 1200px) {
   .header__menu-list {
     font-size: 1.5rem; } }
-@media (max-width: 768px) {
+@media (max-width: 916px) {
   .header__menu-list li a {
     width: 100%;
     border-bottom: 1px solid #ebebeb; }
@@ -659,7 +659,7 @@ textarea:focus {
     height: 100%;
     overflow-y: auto;
     transform: translateX(100%);
-    transition: .5s transform ease-out, 5s background; }
+    transition: .5s transform ease-out; }
 
   .header__menu_list_mobile {
     transform: translateX(0); }

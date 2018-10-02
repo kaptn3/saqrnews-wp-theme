@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 916px) {
   .header__menu-list li  a {
     width: 100%;
     border-bottom: 1px solid #ebebeb;
@@ -113,7 +113,7 @@
     height: 100%;
     overflow-y: auto;
     transform: translateX(100%);
-    transition: .5s transform ease-out, 5s background;
+    transition: .5s transform ease-out;
   }
 
   .header__menu_list_mobile {
@@ -125,9 +125,5 @@
     position: relative;
     box-shadow: none;
     background: #f3f3f3;
-  }
-
-  .sub-menu > li {
-    //border-bottom: 1px solid #ebebeb;
   }
 }
