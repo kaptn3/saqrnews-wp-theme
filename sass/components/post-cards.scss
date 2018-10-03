@@ -21,6 +21,9 @@
   background-size: cover;
   box-shadow: none;
   transition: .5s box-shadow cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.posts > .posts__card {
   height: 200px;
   margin-bottom: 20px;
 }
