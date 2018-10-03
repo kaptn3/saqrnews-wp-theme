@@ -6,18 +6,19 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 <aside id="secondary" class="sidebar">
   <h2 class="sidebar__widget-title">آخر الأخبار</h2>
-      <div class="sidebar__posts">
+      <div clas s="sidebar__posts">
         <?php 
         $args = array(
-          'orderby'       => 'rand',
-          'posts_per_page' => 4
+          'posts_per_page' => 8
         );
         $query = new WP_Query( $args );
 
         if ( $query->have_posts() ) {
           while ( $query->have_posts() ) {
             $query->the_post();
-            get_template_part('templates/widget-sidebar-1');
+            if ( $query->current_post >= 4 ) {
+              get_template_part('templates/widget-sidebar-1');
+            }
           }
         }
         wp_reset_postdata(); ?>
