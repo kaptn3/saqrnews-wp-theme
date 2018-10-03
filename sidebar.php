@@ -9,6 +9,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
       <div class="sidebar__posts">
         <?php 
         $args = array(
+          'orderby'       => 'rand',
           'posts_per_page' => 4
         );
         $query = new WP_Query( $args );

@@ -4,7 +4,6 @@
   <section class="posts">
     <?php 
     $args = array(
-      'orderby' => 'rand',
       'posts_per_page' => 4
     );
     $query = new WP_Query( $args );
