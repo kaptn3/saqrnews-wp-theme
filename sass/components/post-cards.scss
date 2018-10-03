@@ -20,7 +20,9 @@
   background-position: center;
   background-size: cover;
   box-shadow: none;
-  transition: .5s box-shadow cubic-bezier(0.18, 0.89, 0.32, 1.28)
+  transition: .5s box-shadow cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 .posts__card:hover,
