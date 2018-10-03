@@ -667,10 +667,13 @@ textarea:focus {
     transform: translateX(0); }
 
   .sub-menu {
-    display: block;
     position: relative;
     box-shadow: none;
-    background: #f3f3f3; } }
+    background: #f3f3f3; }
+
+  .menu-item-has-children:hover .sub-menu,
+  .menu-item-has-children:focus .sub-menu {
+    display: none; } }
 .header__search {
   display: flex;
   justify-content: flex-end;

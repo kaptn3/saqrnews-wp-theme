@@ -123,9 +123,13 @@
   }
 
   .sub-menu {
-    display: block;
     position: relative;
     box-shadow: none;
     background: #f3f3f3;
+  }
+
+  .menu-item-has-children:hover .sub-menu,
+  .menu-item-has-children:focus .sub-menu {
+    display: none;
   }
 }

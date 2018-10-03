@@ -40,6 +40,29 @@ function iconDownSubmenu() {
   }
 };
 
-window.onload = function() {
+function openSubMenu(elem) {
+  let display = elem.style.display;
+  if (display === 'block') {
+    elem.style.display = 'none';
+  } else {
+    elem.style.display = 'block';
+  }
+};
+
+function subMenu() {
+  const linkSubmenus = document.querySelectorAll('.menu-item-has-children > a');
+  const submenus = document.querySelectorAll('.menu-item-has-children > .sub-menu');
+  for (let i = 0; i < linkSubmenus.length; i++) {
+    linkSubmenus[i].addEventListener('click', function(e) {
+      e.preventDefault();
+      openSubMenu(submenus[i]);
+    });
+  }
+};
+
+document.addEventListener('DOMContentLoaded', function() {
   iconDownSubmenu();
-}
+  subMenu();
+});
+
+
