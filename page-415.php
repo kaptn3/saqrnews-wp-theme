@@ -1,4 +1,8 @@
-<div class="horoscopes">
+<?php get_header(); ?>
+
+<div class="wrapper">
+
+    <div class="horoscopes">
         <?php
         if ( isset( $_GET['zodiac'] ) ) {
         ?>
@@ -42,3 +46,8 @@
         </div>
         <?php } ?>
     </div><!-- end horoscope block -->
+</div><!-- end wrapper -->
+
+<?php get_sidebar(); ?>
+
+<?php get_footer(); ?>
