@@ -1,0 +1,34 @@
+.horoscopes__tabs {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.horoscopes__item {
+    width: 100%;
+}
+
+.horoscopes__item > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.period-block {
+    display: none;
+}
+
+.period-daily {
+    display: block;
+}
+
+.horoscopes__item_active {
+    display: block;
+    background: var(--tenne);
+    color: #fff;
+} 

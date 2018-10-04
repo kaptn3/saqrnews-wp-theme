@@ -60,6 +60,16 @@ function subMenu() {
   }
 };
 
+function openPeriod(period) {
+  const tabs = document.querySelectorAll('.horoscopes > .period-block');
+  const className = 'period-' + period;
+  const openTab = document.querySelector(`.horoscopes > .${className}`);
+  for (i = 0; i < tabs.length; i++) {
+    tabs[i].style.display = 'none';
+  }
+  openTab.style.display = 'block';
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   iconDownSubmenu();
   subMenu();
