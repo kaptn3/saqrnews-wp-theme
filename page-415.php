@@ -36,6 +36,7 @@
 
                 echo '</div>';
             }
+            echo '<p class="horoscopes__source"><a href="http://www.elabraj.net" rel="nofollow">www.elabraj.net</a> :مصدر</p>';
         } else {
         ?>
         <ul class="horoscopes__list">

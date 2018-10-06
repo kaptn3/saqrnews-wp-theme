@@ -965,6 +965,12 @@ p iframe {
   background: var(--tenne);
   color: #fff; }
 
+.horoscopes__source {
+  padding-top: 20px; }
+
+.horoscopes__source > a {
+  color: var(--tenne); }
+
 .horoscopes__list {
   display: flex;
   flex-wrap: wrap;

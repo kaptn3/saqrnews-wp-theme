@@ -33,7 +33,15 @@
     color: #fff;
 }
 
- .horoscopes__list {
+.horoscopes__source {
+    padding-top: 20px;    
+}
+
+.horoscopes__source > a {
+    color: var(--tenne);
+}
+
+.horoscopes__list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
