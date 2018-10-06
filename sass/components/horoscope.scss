@@ -31,4 +31,35 @@
     display: block;
     background: var(--tenne);
     color: #fff;
-} 
+}
+
+ .horoscopes__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.horoscopes__list-item {
+    padding: 15px;
+    width: 25%;
+    text-align: center;
+}
+
+.horoscopes__list-item > a {
+    opacity: .9;
+}
+
+.horoscopes__list-item > a:hover,
+.horoscopes__list-item > a:focus {
+    opacity: 1;
+}
+
+.horoscopes__list-item > a > img {
+    width: 65%;
+}
+
+.horoscopes__list-title {
+    margin-top: 10px;
+}

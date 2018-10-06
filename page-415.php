@@ -2,8 +2,9 @@
 
 <div class="wrapper">
 
-    <div class="horoscopes">
+       <div class="horoscopes">
         <?php
+        $zodiacs = ['برج الحمل', 'برج الثور', 'برج الجوزاء', 'برج السرطان', 'برج الاسد', 'برج العذراء', 'برج الميزان', 'برج العقرب', 'برج القوس', 'برج الجدي', 'برج الدلو', 'برج الحوت'];
         if ( isset( $_GET['zodiac'] ) ) {
         ?>
             <nav>
@@ -37,13 +38,20 @@
             }
         } else {
         ?>
-        <div class="horoscopes">
+        <ul class="horoscopes__list">
             <?php 
-            for ($i = 1; $i < 12; $i++) { 
-                echo '<a href="' . '?zodiac=' . $i . '">Text</a>';  
-            }
+            for ($i = 0; $i < 12; $i++) {
             ?>
-        </div>
+                <li class="horoscopes__list-item">
+                    <?php 
+                    echo '<a href="' . '?zodiac=' . ( $i + 1 ) . '">';
+                    echo '<img src="' . get_bloginfo( 'template_directory' ) . '/img/horoscope/' . $i . '.svg">';
+                    echo '<h3 class="horoscopes__list-title">' . $zodiacs[$i] . '</h3>';
+                    echo '</a>';?>
+                </li>
+            <?php }
+            ?>
+        </ul>
         <?php } ?>
     </div><!-- end horoscope block -->
 </div><!-- end wrapper -->
