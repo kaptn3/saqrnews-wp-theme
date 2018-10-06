@@ -23,6 +23,11 @@
     padding: 10px;
 }
 
+a.horoscopes__item_active {
+    background: var(--tenne);
+    color: #fff;
+}
+
 .period-block {
     display: none;
 }

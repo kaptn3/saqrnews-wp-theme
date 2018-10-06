@@ -11,9 +11,15 @@
         ?>
             <nav>
                 <ul class="horoscopes__tabs">
-                    <li class="horoscopes__item"><a onclick="openPeriod('daily')">اليوم</a></li>
-                    <li class="horoscopes__item"><a onclick="openPeriod('monthly')">هذا الشهر</a></li>
-                    <li class="horoscopes__item"><a onclick="openPeriod('yearly')">هذه السنة</a></li>
+                    <li class="horoscopes__item">
+                        <a class="horoscopes__item_active" onclick="openPeriod(0)">اليوم</a>
+                    </li>
+                    <li class="horoscopes__item">
+                        <a onclick="openPeriod(1)">هذا الشهر</a>
+                    </li>
+                    <li class="horoscopes__item">
+                        <a onclick="openPeriod(2)">هذه السنة</a>
+                    </li>
                 </ul>
             </nav>
             <?php

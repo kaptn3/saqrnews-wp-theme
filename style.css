@@ -937,7 +937,7 @@ p iframe {
   max-width: 100%; }
 
 .horoscopes__title {
-  margin-bottom: 15px; }
+  margin-bottom: 20px; }
 
 .horoscopes__tabs {
   display: flex;
@@ -956,6 +956,10 @@ p iframe {
   background: #eee;
   border: 1px solid #ddd;
   padding: 10px; }
+
+a.horoscopes__item_active {
+  background: var(--tenne);
+  color: #fff; }
 
 .period-block {
   display: none; }

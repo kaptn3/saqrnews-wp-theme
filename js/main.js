@@ -61,13 +61,15 @@ function subMenu() {
 };
 
 function openPeriod(period) {
-  const tabs = document.querySelectorAll('.horoscopes > .period-block');
-  const className = 'period-' + period;
-  const openTab = document.querySelector(`.horoscopes > .${className}`);
+  const periodBlocks = document.querySelectorAll('.horoscopes > .period-block');
+  const tabs = document.querySelectorAll('.horoscopes__item > a');
+
   for (i = 0; i < tabs.length; i++) {
-    tabs[i].style.display = 'none';
+    periodBlocks[i].style.display = 'none';
+    tabs[i].className = '';
   }
-  openTab.style.display = 'block';
+  periodBlocks[period].style.display = 'block';
+  tabs[period].className = 'horoscopes__item_active';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
