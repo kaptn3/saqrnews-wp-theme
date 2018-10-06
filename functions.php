@@ -45,9 +45,7 @@ function saqrnews_scripts() {
 
   wp_enqueue_style( 'saqrnews-style', get_stylesheet_uri(), false, time());
 
-  wp_enqueue_script( 'vue', 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js', '20151215', true );
-
-  wp_enqueue_script( 'vue', 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js', '20151215', true );
+  wp_enqueue_script( 'vue', 'https://cdn.jsdelivr.net/npm/vue', '20151215', true );
 
   wp_enqueue_script( 'saqrnews-main-js', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
 
