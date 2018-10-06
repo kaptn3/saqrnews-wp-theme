@@ -2,16 +2,16 @@
 
 <div class="wrapper">
 
-       <div class="horoscopes">
+   <div class="horoscopes">
         <?php
         $zodiacs = ['برج الحمل', 'برج الثور', 'برج الجوزاء', 'برج السرطان', 'برج الاسد', 'برج العذراء', 'برج الميزان', 'برج العقرب', 'برج القوس', 'برج الجدي', 'برج الدلو', 'برج الحوت'];
         if ( isset( $_GET['zodiac'] ) ) {
         ?>
             <nav>
                 <ul class="horoscopes__tabs">
-                    <li class="horoscopes__item"><a onclick="openPeriod('daily')">Daily</a></li>
-                    <li class="horoscopes__item"><a onclick="openPeriod('monthly')">Monthly</a></li>
-                    <li class="horoscopes__item"><a onclick="openPeriod('yearly')">Yearly</a></li>
+                    <li class="horoscopes__item"><a onclick="openPeriod('daily')">اليوم</a></li>
+                    <li class="horoscopes__item"><a onclick="openPeriod('monthly')">هذا الشهر</a></li>
+                    <li class="horoscopes__item"><a onclick="openPeriod('yearly')">هذه السنة</a></li>
                 </ul>
             </nav>
             <?php
@@ -23,17 +23,17 @@
                 $site = 'http://www.elabraj.net/ar/horoscope/';
                 $url = $site . $current_period . '/' . $zodiac;
                 $content = file_get_contents( $url );
-
+                
                 if ( $i === 0) {
                     $first_step = explode( '<div class="horoscope-daily-text">' , $content );
-                    $second_step = explode( "</div>" , $first_step[4] );
+                    $second_step = explode( "</div>" , $first_step[( count( $first_step ) - 1 )] );
                 } else {
                     $first_step = explode( '<div class="horoscope-content-body">', $content );
                     $second_step = explode( "</div>" , $first_step[1] );
                 }
                 
                 print_r( $second_step[0] );
-
+                
                 echo '</div>';
             }
             echo '<p class="horoscopes__source"><a href="http://www.elabraj.net" rel="nofollow">www.elabraj.net</a> :مصدر</p>';
