@@ -2,10 +2,12 @@
 
 <div class="wrapper">
 
-   <div class="horoscopes">
+    <div class="horoscopes">
         <?php
         $zodiacs = ['برج الحمل', 'برج الثور', 'برج الجوزاء', 'برج السرطان', 'برج الاسد', 'برج العذراء', 'برج الميزان', 'برج العقرب', 'برج القوس', 'برج الجدي', 'برج الدلو', 'برج الحوت'];
         if ( isset( $_GET['zodiac'] ) ) {
+            $zodiac = $_GET['zodiac'];
+            echo '<h2 class="horoscopes__title">' . $zodiacs[( $zodiac - 1 )] . '</h2>';
         ?>
             <nav>
                 <ul class="horoscopes__tabs">
@@ -15,7 +17,6 @@
                 </ul>
             </nav>
             <?php
-            $zodiac = $_GET['zodiac'];
             $period = [ 'daily', 'monthly', 'yearly' ];
             for ($i = 0; $i < 3; $i++) {
                 $current_period = $period[ $i ];

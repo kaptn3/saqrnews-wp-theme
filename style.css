@@ -936,6 +936,9 @@ textarea:focus {
 p iframe {
   max-width: 100%; }
 
+.horoscopes__title {
+  margin-bottom: 15px; }
+
 .horoscopes__tabs {
   display: flex;
   list-style: none;
