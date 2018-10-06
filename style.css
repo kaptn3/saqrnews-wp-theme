@@ -982,7 +982,8 @@ p iframe {
 
 .horoscopes__list-item > a:hover,
 .horoscopes__list-item > a:focus {
-  opacity: 1; }
+  opacity: 1;
+  color: var(--tenne); }
 
 .horoscopes__list-item > a > img {
   width: 65%; }
@@ -990,6 +991,15 @@ p iframe {
 .horoscopes__list-title {
   margin-top: 10px; }
 
+@media (max-width: 600px) {
+  .horoscopes__list-item {
+    width: calc(100% / 3); } }
+@media (max-width: 576px) {
+  .horoscopes__list-item > a > img {
+    width: 90%; } }
+@media (max-width: 425px) {
+  .horoscopes__list-item {
+    width: 50%; } }
 .footer__social {
   border-bottom: 2px solid #c4c4c4;
   padding-bottom: 1.2em; }
