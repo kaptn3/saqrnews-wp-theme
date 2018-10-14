@@ -10,7 +10,7 @@
   align-items: center;
   color: var(--blue);
   position: relative;
-  height: 100px;
+  height: 110px;
 }
 
 .header__social {
@@ -34,7 +34,7 @@
     grid-template-areas:
                         "logo search button";
     grid-template-columns: auto 1fr auto;
-    height: 78px;
+    height: 90px;
   }
 
   .header_mobile {

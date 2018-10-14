@@ -17,7 +17,7 @@
       <div
         class="header__logo">
         <a href="<?php echo home_url(); ?>" >
-          <img class="header__logo-img" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo.svg">
+          <img class="header__logo-img" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo.png">
         </a>
       </div>
 
