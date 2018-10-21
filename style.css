@@ -616,7 +616,8 @@ textarea:focus {
     display: block; }
 
 .sub-menu > li > a {
-  color: #222; }
+  color: var(--blue);
+  border-bottom: 1px solid #ebebeb; }
 
 .sub-menu > li > a:hover,
 .sub-menu > li > a:focus {
