@@ -526,6 +526,10 @@ textarea:focus {
 .sidebar__top-posts-item > h3 {
   padding: 10px 0; }
 
+.sidebar__top-posts-item > h3:hover,
+.sidebar__top-posts-item > h3:focus {
+  color: var(--tenne); }
+
 .sidebar__top-posts-card.posts__card {
   height: 160px;
   box-shadow: none; }
@@ -785,7 +789,7 @@ textarea:focus {
 .posts__card-category:focus,
 .posts__card-category:hover {
   color: #fff;
-  background: var(--blue); }
+  background: var(--tenne); }
 
 .posts__card-content {
   position: absolute;
@@ -847,7 +851,7 @@ textarea:focus {
 
 .list-post__title:hover,
 .list-post__title:focus {
-  color: var(--blue); }
+  color: var(--tenne); }
 
 .list-post__date {
   color: var(--blue-light); }

@@ -82,6 +82,11 @@
   padding: 10px 0;
 }
 
+.sidebar__top-posts-item > h3:hover,
+.sidebar__top-posts-item > h3:focus {
+  color: var(--tenne);
+}
+
 .sidebar__top-posts-card.posts__card {
   height: 160px;
   box-shadow: none;
