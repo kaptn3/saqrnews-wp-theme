@@ -33,10 +33,21 @@ var social = new Vue({
 
 function iconDownSubmenu() {
   const hasChild = document.querySelectorAll('.menu-item-has-children > a');
-  for (let i = 0; i < hasChild.length; i++) { 
+  for (let i = 0; i < hasChild.length; i++) {
     let iconSortDown = document.createElement('i');
     hasChild[i].appendChild(iconSortDown);
     iconSortDown.classList.add('fas', 'fa-sort-down');
+  }
+};
+
+function iconForMenuItems() {
+  const menuItems = document.querySelectorAll('.header__menu-list > .menu-item');
+  const iconClasses = ['fa-home', 'fa-newspaper', 'fa-futbol', 'fa-users'];
+  
+  for (let i = 0; i < 4; i++) { 
+    icon = document.createElement('i');
+    menuItems[i].insertBefore(icon, menuItems[i].children[0]);
+    icon.classList.add('fas', iconClasses[i]);
   }
 };
 
@@ -75,6 +86,7 @@ function openPeriod(period) {
 document.addEventListener('DOMContentLoaded', function() {
   iconDownSubmenu();
   subMenu();
+  iconForMenuItems();
 });
 
 

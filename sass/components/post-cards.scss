@@ -85,6 +85,10 @@
   font-weight: normal;
 }
 
+.posts__card > h3 {
+  font-size: 1rem;
+}
+
 .posts__card-title:hover,
 .posts__card-title:focus {
   color: var(--blue-light);
